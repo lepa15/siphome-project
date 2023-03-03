@@ -1,0 +1,129 @@
+// white color
+$white: #FFFFFF;
+
+// green color
+$green: #1ECE7A;
+
+// black color
+$black: #262B35;
+
+// blue color
+$blue: #1C57C9;
+
+// grey color
+$grey: #606C84;
+
+// font-size
+$fz16: 16px;
+$fz17: 17px;
+$fz18: 18px;
+
+
+//! --------features---------
+
+// title-block
+@mixin title-block {
+	font-weight: 700;
+	line-height: 1.4;
+	letter-spacing: 0.6em;
+	text-transform: uppercase;
+	color: $blue;
+}
+
+// subtitle-block
+@mixin subtitle-block {
+	font-weight: 700;
+	font-size: 42px;
+	line-height: 1.4;
+	letter-spacing: -0.02em;
+	color: $black;
+}
+
+// subtitle-block-mobile
+@mixin subtitle-block-mobile {
+	font-size: 32px;
+}
+
+// tagline-block
+@mixin tagline-block {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 1.6;
+	color: $grey;
+}
+
+// title-content
+@mixin title-content {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 1.3;
+	color: $black;
+}
+
+// tagline-content
+@mixin tagline-content {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	line-height: 1.6;
+	color: $grey;
+}
+
+//! -----update-block
+
+// update-title
+@mixin update-title {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 1.3;
+	color: $white;
+}
+
+// update-title-mobile
+@mixin update-title-mobile {
+	font-weight: 700;
+}
+
+// update-tagline
+@mixin update-tagline {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	line-height: 1.6;
+	color: $white;
+}
+
+// footer-title
+@mixin footer-title {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 2.4;
+	color: $black;
+}
+
+// footer-title-mobile
+@mixin footer-title-mobile {
+	font-size: 18px;
+}
+
+// footer-link
+@mixin footer-link {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 2.4;
+	color: $grey;
+}
+
+// footer-link-mobile
+@mixin footer-link-mobile {
+	font-size: 18px;
+	line-height: 2.6;
+}

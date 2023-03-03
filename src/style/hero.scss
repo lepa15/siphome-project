@@ -1,0 +1,162 @@
+.hero-block {
+	&__container {
+		position: relative;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding-top: 63px;
+		z-index: 40;
+
+		@media (max-width: 375px) {
+			padding-top: 28px;
+		}
+	}
+
+	&__content {
+		@media (max-width: 940px) {
+			margin: 0 auto;
+			text-align: center;
+		}
+	}
+
+	&__title {
+		margin-top: 0;
+		padding-top: 49px;
+		margin-bottom: 36px;
+		max-width: 600px;
+		font-weight: 700;
+		font-size: 55px;
+		line-height: 1.3;
+		letter-spacing: -0.02em;
+		color: $white;
+
+		& span {
+			color: $green;
+		}
+
+		@media (max-width: 940px) {
+			padding-top: 0;
+		}
+
+		@media (max-width: 560px) {
+			margin-bottom: 36px;
+			font-size: 42px;
+		}
+	}
+
+	&__tagline {
+		margin-bottom: 64px;
+		max-width: 560px;
+		font-size: 20px;
+		line-height: 1.6;
+		color: $white;
+
+		@media (max-width: 375px) {
+			margin-bottom: 30px;
+			font-size: 18px;
+		}
+	}
+
+	&__link {
+		display: inline-block;
+		margin-right: 16px;
+		margin-bottom: 61px;
+		padding: 13px 21px;
+		border: 1px solid $white;
+		border-radius: 3px;
+		font-weight: 700;
+		line-height: 18px;
+		color: $white;
+		transition-duration: 0.5s;
+
+		&:hover {
+			border-color: transparent;
+			background-color: $green;
+		}
+
+		+&__link {
+			margin-right: 0;
+		}
+
+
+		@media (max-width: 994px) {
+			margin-bottom: 54px;
+		}
+
+		@media (max-width: 440px) {
+			margin-bottom: 54px;
+		}
+
+		@media (max-width: 335px) {
+			margin-right: 0;
+			margin-bottom: 15px;
+		}
+	}
+
+	&__link+&__link {
+		margin-right: 0;
+	}
+
+	&__dot-img {
+		display: block;
+		transform: translateX(-119px);
+
+		@media (max-width: 1060px) {}
+	}
+
+	&__large-img {
+		display: none;
+
+		@media (min-width: 941px) {
+			display: block;
+			align-self: baseline;
+			padding: 1px;
+			animation: spin 10s infinite ease-in-out;
+			// animation: shake-circle-02 7s infinite ease; 
+		}
+	}
+
+
+	&__small-img {
+		display: none;
+
+		@media (min-width: 941px) {
+			display: block;
+			position: absolute;
+			top: 520px;
+			right: -119px;
+			animation: spin 3.5s infinite cubic-bezier(.21, .78, .27, .67);
+			z-index: 5;
+		}
+
+	}
+
+}
+
+@keyframes spin {
+	from {
+		transform: rotate(0turn) translateY(-2px) translateY(1.2%) rotate(1turn);
+	}
+
+	to {
+		transform: rotate(1turn) translateY(-2px) translateY(1.2%) rotate(0turn);
+	}
+}
+
+@keyframes shake-circle-02 {
+	0% {
+		transform: translate(-2px, 2px);
+	}
+
+	33% {
+		transform: translate(-2px, 4px);
+	}
+
+	66% {
+		transform: translate(-4px, 4px);
+	}
+
+	100% {
+		transform: translate(-2px, 2px);
+	}
+}

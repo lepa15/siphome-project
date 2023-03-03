@@ -10,16 +10,20 @@ html {
 	border: 0;
 	box-sizing: inherit;
 }
+
 li {
 	list-style: none;
 }
+
 a,
 a:visited {
 	text-decoration: none;
 }
+
 a:hover {
 	text-decoration: none;
 }
+
 h1,
 h2,
 h3,
@@ -29,15 +33,16 @@ h6 {
 	font-weight: inherit;
 	font-size: inherit;
 }
+
 img {
-   max-width: 100%;
-   height: auto;
+	max-width: 100%;
+	height: auto;
 }
 
 body {
 	height: 100%;
-   color: #262B35;
-  	background-color: #FFFFFF;
+	color: #262B35;
+	background-color: #FFFFFF;
 
 	font-family: Inter, sans-serif;
 	font-size: 15px;
@@ -50,20 +55,21 @@ body.lock {
 }
 
 .wrapper-block {
-  min-height: 100%;
+	min-height: 100%;
 }
 
-.container{
-  max-width: 1160px;
-  margin: 0px auto;
-  padding: 0px 30px;
+.container {
+	position: relative;
+	max-width: 1200px;
+	margin: 0px auto;
+	padding: 0px 30px;
 }
 
-section,
-aside,
-article {
+
+/* 
+section {
 	padding: 90px 0;
-}
+} */
 
 /* @media (max-width: 834px) {
 	section,
