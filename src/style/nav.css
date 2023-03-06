@@ -1,7 +1,5 @@
 /** Изменение цвета шрифта при скролле */
 
-@media (min-width: 860px) {
-
 	.is_scrolled .nav-block__link {
 		color: #1C57C9;
 	}
@@ -13,7 +11,6 @@
 		transition-duration: 0.4s;
 	}
 
-}
 
 .nav-block {
 	padding-left: 90px;

@@ -1,11 +1,16 @@
 .hero-block {
+	&__wrap {
+		position: relative;
+		z-index: 40;
+	}
+
 	&__container {
 		position: relative;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 		padding-top: 63px;
-		z-index: 40;
+		z-index: 30;
 
 		@media (max-width: 375px) {
 			padding-top: 28px;
@@ -41,6 +46,10 @@
 		@media (max-width: 560px) {
 			margin-bottom: 36px;
 			font-size: 42px;
+		}
+
+		@media (max-width: 400px) {
+			font-size: 30px;
 		}
 	}
 
@@ -78,18 +87,12 @@
 			margin-right: 0;
 		}
 
-
 		@media (max-width: 994px) {
 			margin-bottom: 54px;
 		}
 
-		@media (max-width: 440px) {
-			margin-bottom: 54px;
-		}
-
-		@media (max-width: 335px) {
+		@media (max-width: 410px) {
 			margin-right: 0;
-			margin-bottom: 15px;
 		}
 	}
 
@@ -100,8 +103,6 @@
 	&__dot-img {
 		display: block;
 		transform: translateX(-119px);
-
-		@media (max-width: 1060px) {}
 	}
 
 	&__large-img {
@@ -123,10 +124,19 @@
 		@media (min-width: 941px) {
 			display: block;
 			position: absolute;
-			top: 520px;
-			right: -119px;
+			// top: 520px;
+			// right: -119px;
+
+			bottom: 0;
+			right: 0;
+
 			animation: spin 3.5s infinite cubic-bezier(.21, .78, .27, .67);
-			z-index: 5;
+			z-index: 35;
+
+			@media (max-width: 1050px) {
+				bottom: 11%;
+				right: 0;
+			}
 		}
 
 	}

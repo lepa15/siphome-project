@@ -1,5 +1,6 @@
 @import './style/normalize.css';
 @import './style/global.css';
+@import './style/animation.css';
 @import './style/fonts.css';
 @import './style/var.scss';
 @import './style/header.css';
@@ -7,3 +8,4 @@
 @import './style/nav.css';
 @import './style/hero.scss';
 @import './style/bg.css';
+@import './style/features.scss';

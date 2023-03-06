@@ -58,6 +58,12 @@ body.lock {
 	min-height: 100%;
 }
 
+.container-wrap {
+	max-width: 1440px;
+	margin: 0px auto;
+	padding: 0 30px;
+}
+
 .container {
 	position: relative;
 	max-width: 1200px;
