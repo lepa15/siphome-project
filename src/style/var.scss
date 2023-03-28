@@ -33,7 +33,7 @@ $fz18: 18px;
 // subtitle-block
 @mixin subtitle-block {
 	font-weight: 700;
-	font-size: 42px;
+	font-size: clamp(2rem, 1.537rem + 1.85vw, 2.625rem);
 	line-height: 1.4;
 	letter-spacing: -0.02em;
 	color: $black;

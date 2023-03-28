@@ -1,0 +1,137 @@
+
+
+/* Ограничивающая оболочка */
+.slick-list {
+	/* overflow: hidden; */
+}
+
+/* Лента слайдов */
+.slick-track {
+	/* display: flex; */
+}
+
+.slick-arrow {
+}
+
+/* Стрелка влево */
+/* .testimonials-block__slider-list .slick-arrow.slick-prev{
+	background-image: url('img/testimonials/arrow-left.svg');
+} */
+/* Стрелка вправо */
+/* .testimonials-block__slider-list .slick-arrow.slick-next{
+	background-image: url('img/testimonials/arrow-right.svg');
+
+} */
+
+
+
+/* Слайдер */
+.slick-slider{
+}
+/* Слайдер запущен */
+.slick-slider.slick-initialized{}
+/* Слайдер с точками */
+.slick-slider.slick-dotted{}
+
+
+/* Слайд */
+.services-block__feat-wrap .slick-slide{
+	width: 360px;
+	padding: 0 15px;
+}
+/* Слайд активный (показывается) */
+.slick-slide.slick-active{
+
+}
+/* Слайд основной */
+.slick-slide.slick-current{}
+/* Слайд по центру */
+.slick-slide.slick-center{
+
+}
+/* Клонированный слайд */
+.slick-slide.slick-cloned{}
+/* Стрелка */
+.slick-arrow{}
+/* Стрелка влево */
+.slick-arrow.slick-prev{
+}
+/* Стрелка вправо */
+.slick-arrow.slick-next{}
+/* Стрелка не активная */
+.slick-arrow.slick-disabled{}
+/* Точки (булиты) */
+.slick-dots{}
+.slick-dots li{}
+/* Активная точка */
+.slick-dots li.slick-active{}
+/* Элемент точки */
+.services-block__feat-wrap .slick-dots li button{
+	display: none;
+}
+
+
+.services-block__feat-wrap .slick-dots{
+	display: none;
+	position: static;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	list-style: none;
+	
+}
+.services-block__feat-wrap .slick-dots li button:before {
+	display: none;
+}
+
+.services-block__feat-wrap .slick-dots li.slick-active{
+	width: 12px;
+	height: 12px;
+	background-color: #1C57C9;
+	border-radius: 50%;
+
+}
+
+.services-block__feat-wrap .slick-dots li{
+	width: 12px;
+	height: 12px;
+	background-color: #606C84;
+	border-radius: 50%;
+}
+
+
+.services-block__feat-wrap .slick-dots li {
+	display: none
+}
+.services-block__feat-wrap .slick-dots li.slick-active,
+.services-block__feat-wrap .slick-dots li.slick-active + li,
+.services-block__feat-wrap .slick-dots li.slick-active + li + li,
+.services-block__feat-wrap .slick-dots li.slick-active + li + li + li{
+	display: block;
+}
+
+.services-block__feat-wrap .slick-dots li:nth-last-child(1),
+.services-block__feat-wrap .slick-dots li:nth-last-child(2),
+.services-block__feat-wrap .slick-dots li:nth-last-child(4),
+.services-block__feat-wrap .slick-dots li:nth-last-child(3) {
+	display: block;
+}
+
+.services-block__feat-wrap .slick-dots li.slick-active ~ li:nth-last-child(1),
+.services-block__feat-wrap .slick-dots li.slick-active ~ li:nth-last-child(2),
+.services-block__feat-wrap .slick-dots li.slick-active ~ li:nth-last-child(4),
+.services-block__feat-wrap .slick-dots li.slick-active ~ li:nth-last-child(3) {
+	display: none;
+}
+.services-block__feat-wrap .slick-dots li.slick-active + li + li:nth-last-child(3),
+.services-block__feat-wrap .slick-dots li.slick-active + li + li:nth-last-child(4),
+.services-block__feat-wrap .slick-dots li.slick-active + li + li:nth-last-child(2),
+.services-block__feat-wrap .slick-dots li.slick-active + li + li:nth-last-child(1),
+.services-block__feat-wrap .slick-dots li.slick-active + li:nth-last-child(3),
+.services-block__feat-wrap .slick-dots li.slick-active + li:nth-last-child(4),
+.services-block__feat-wrap .slick-dots li.slick-active + li:nth-last-child(2),
+.services-block__feat-wrap .slick-dots li.slick-active + li:nth-last-child(1){
+	display: block;
+}
+
+

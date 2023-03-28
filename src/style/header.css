@@ -34,11 +34,11 @@
 	color: #FFFFFF;
 	background-color:#1C57C9;
 	cursor: pointer;
-	/* transition: all 0.4s; */
+	transition: all 0.4s;
 }
 
-.header-block__btn-menu:hover {
-	transform: translate(0px, 4px);
+.header-block__btn-menu:active {
+	transform: scale(0.9);
 }
 
 

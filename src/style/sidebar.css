@@ -104,6 +104,8 @@
 	.sidebar-block.active {
 		left: 0;
 		transition: all 0.5s 0.1s;
+		opacity: 0.9;
+		background-color: white;
 	}
 
 	/** Анимация для ссылок навигации  */
@@ -142,10 +144,11 @@
 		color: #FF5A4F;
 		background-color: #FFFFFF;
 		cursor: pointer;
+		transition-duration: 0.2s;
 	}
 
 	.sidebar-block__btn-close:hover {
-		transform: translate(0px, 4px)
+		transform: scale(0.9);
 	}
 
 	.sidebar-block__nav {

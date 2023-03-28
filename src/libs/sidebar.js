@@ -9,14 +9,12 @@ openBtn.addEventListener('click', () => {
 	openBtn.classList.toggle(active);
 	sidebar.classList.toggle(active);
 	body.classList.toggle(lock);
-	setTimeout(() => openBtn.style.display = 'none', 450)
 })
 
 closeBtn.addEventListener('click', () => {
 	openBtn.classList.remove(active);
 	sidebar.classList.remove(active);
 	body.classList.remove(lock);
-	setTimeout(() => openBtn.style.display = '', 0)
 })
 
 sidebar.querySelectorAll('.nav-block__link').forEach(link => {
@@ -24,7 +22,6 @@ sidebar.querySelectorAll('.nav-block__link').forEach(link => {
 		openBtn.classList.remove(active);
 		sidebar.classList.remove(active);
 		body.classList.remove(lock);
-		setTimeout(() => openBtn.style.display = '', 0)
 	})
 })
 

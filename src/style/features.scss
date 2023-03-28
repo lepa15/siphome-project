@@ -216,10 +216,6 @@
 	&__subtitle {
 		margin-bottom: 24px;
 		@include subtitle-block;
-
-		@media (max-width: 500px) {
-			@include subtitle-block-mobile
-		}
 	}
 
 	&__tagline {

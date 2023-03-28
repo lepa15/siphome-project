@@ -1,5 +1,7 @@
 html {
 	box-sizing: content-box;
+	/* overflow-x: hidden; */
+
 }
 
 *,
@@ -40,6 +42,7 @@ img {
 }
 
 body {
+	overflow-x: hidden;
 	height: 100%;
 	color: #262B35;
 	background-color: #FFFFFF;
@@ -50,11 +53,15 @@ body {
 	line-height: 1;
 }
 
-body.lock {
+body.lock{
 	overflow: hidden;
+	background-color: rgba(38,43,53, 0.5);
+	transition-duration: 0.4s;
 }
 
+
 .wrapper-block {
+	/* overflow-x: hidden; */
 	min-height: 100%;
 }
 
@@ -65,7 +72,6 @@ body.lock {
 }
 
 .container {
-	position: relative;
 	max-width: 1200px;
 	margin: 0px auto;
 	padding: 0px 30px;
